@@ -26,7 +26,7 @@ const signup = () => {
             <input type="text" id="name" placeholder="John Doe">
             <input type="text" id="password" placeholder="John Doe">
             <input type="text" id="passwrod" placeholder="John Doe">
-            <input type="text" id=se placeholder="John Doe">
+            <input type="text" id="question" placeholder="John Doe">
             <br> 
             <input type="submit" value ="Add Name"> 
          </form>`;
