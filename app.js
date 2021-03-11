@@ -8,12 +8,27 @@ const getLandlords = () => {
       });
     });
 };
+const login = () => {
+  clearDivs();
+};
 
 const attachClickLinks = () => {
-  const li = document.querySelector("li");
-  li.addEventListener("click", getBuildings);
+  document.getElementById("login").addEventListener("click", login);
 };
-window.addEventListener("DOMContentLoaded", getLandlords);
+
+const welcomePage = () => {
+  document.getElementById("welcome").innerHTML += `
+    <a href="#" id="login">Login</a>
+    <a href="#" id="signup">Sign Up!</a>
+  <h1>Connect To Your Property</h1>
+
+  <img id="connect" src="http://images.hw.net/interactives/MFE/img/smarthome.gif"></img>
+  `;
+  document.getElementById("login").addEventListener("click", login);
+  attachClickLinks();
+};
+window.addEventListener("DOMContentLoaded", welcomePage);
+
 const getBuildings = () => {
   fetch("http://localhost:3000/landlords")
     .then((resp) => resp.json())
@@ -26,5 +41,5 @@ const getBuildings = () => {
     });
 };
 
-// const getNav;
-// debugger;
+const getNav;
+debugger;

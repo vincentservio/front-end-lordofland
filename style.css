@@ -15,7 +15,7 @@ li {
   align-items: center;
 }
 
-a:link {
+/* a:link {
   text-align: center;
   font-size: 32px;
 
@@ -24,4 +24,19 @@ a:link {
   font-family: sans-serif;
   background-color: white;
   text-decoration: none;
+} */
+
+#connect {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+#login,
+#signup {
+  /* position: absolute; */
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
 }
