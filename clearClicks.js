@@ -1,3 +1,3 @@
 const clearDivs = () => {
-  document.getElementById("welcome").innerHTML += "";
+  document.getElementById("welcome").innerHTML = "";
 };
